@@ -11,8 +11,8 @@
 
 #### 1. Connect local pc to BIC server:
 - Open your terminal
-- Type: ssh bicadmin@128.2.7.38
-- Type in the password: J0hn!rOck3
+- Type: ssh honeycomb@128.2.7.38
+- Type in the password: ask teammates
 - Type “exit” to exit this connection 
 
 #### 2. Create table and insert data into Cassandra with CQL:
@@ -55,3 +55,19 @@ VALUES ( 'John', 'Male' )
 #### 3. Create table and insert data by using JDBC:
 
 in-doing 
+
+#### 4. Cassandra API
+```
+Synopsis: With Cassandra Java API, users do not need to write SQL to access the Cassandra. Users can write java code to connect Cassandra database, create table, insert objects, delete objects and get objects.
+```
+
+
+Instruction
+
+* Create a CassandraDAOBuilder object
+* Create a CassandraDAO object
+* Using build() function in CassandraDAOBuilder object and pass CassandraDAO object as parameter to build up the setting
+* Then you will get specific DAO java file and under folder "daos" and get specific model java file under folder "models".
+* In folder "models", you can find out the data model you create.
+* In folder "daos", you can find out the specific DAO java file, which contains some actions to operate Cassandra database.
+* After that, you can call getInstance() function to a instance of specific data model, call createTable() function to create a new table for this data model, and call insert() function to insert a new object into the table.
