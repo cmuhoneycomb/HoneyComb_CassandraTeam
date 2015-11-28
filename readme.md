@@ -57,9 +57,9 @@ VALUES ( 'John', 'Male' )
 in-doing 
 
 #### 4. Cassandra API
-```
+
 Synopsis: With Cassandra Java API, users do not need to write SQL to access the Cassandra. Users can write java code to connect Cassandra database, create table, insert objects, delete objects and get objects.
-```
+
 
 
 Instruction
