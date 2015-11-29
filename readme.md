@@ -21,7 +21,7 @@
 - Type: python cqlsh (To open cassandra)
 
 #####Create keyspace:  
-eg. 
+e.g. 
 ```
 CREATE KEYSPACE demo
 WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
@@ -32,7 +32,7 @@ CREATE TABLE keyspace_name.table_name
 ( column_definition, column_definition, ...)
 WITH property AND property ...
 
-eg.
+e.g.
 ```
 CREATE TABLE demo.users (
   user_name varchar PRIMARY KEY,
@@ -46,7 +46,7 @@ INSERT INTO keyspace_name.table_name
 VALUES ( value, value ... )
 USING option AND option
 
-eg.
+e.g.
 ```
 INSERT INTO demo.users 
 ( user_name, gender )
